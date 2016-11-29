@@ -1,8 +1,9 @@
-var shoppingBasket = {
-  groceries: [],
-  add: function(food){
-    this.groceries.push(food);
-  }
+
+var basket = {
+  groceries: []
+  // add: function(food){
+  //   this.groceries.push(food);
+  // }
 }
 
-module.exports = shoppingBasket;
+module.exports = basket;

@@ -1,11 +1,8 @@
 var assert = require('assert');
+var basket = require('../shopping_basket');
 
-describe('Water bottle', function() {
-  beforeEach(function() {
-    shoppingBasket.food = [];
-  });
-  describe('Shopping Basket', function(){
-    it("should find the price of the Basket", function(){
-      assert.equal(0, basket.purchases.length);
-    });
-  });
+describe('Shopping Basket', function(){
+  it("Should find an empty basket without groceries", function(){
+    assert.equal(0, basket.groceries);
+  })
+});
