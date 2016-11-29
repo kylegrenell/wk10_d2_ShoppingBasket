@@ -1,9 +1,12 @@
 
-var basket = {
-  groceries: []
-  // add: function(food){
-  //   this.groceries.push(food);
-  // }
+var shoppingBasket = {
+  groceries: [],
+  clear: function() {
+    this.groceries = [];
+  },
+  itemCount: function() {
+    return this.groceries.length;
+  }
 }
 
-module.exports = basket;
+module.exports = shoppingBasket;
