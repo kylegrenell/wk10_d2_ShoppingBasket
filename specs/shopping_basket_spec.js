@@ -49,4 +49,5 @@ describe("Shopping Basket", function(){
     shoppingBasket.add(vegemite);
     assert.equal(3.90, shoppingBasket.sum());
   })
+  it("should give 10 percent discount")
 })
