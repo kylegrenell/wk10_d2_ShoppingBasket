@@ -29,14 +29,24 @@ describe("Shopping Basket", function(){
     shoppingBasket.add(vegemite);
     assert.equal(1, shoppingBasket.itemCount());
   })
-  it("Should take several items", function(){
+  it("Should take several items from basket", function(){
     shoppingBasket.add(vegemite);
     shoppingBasket.add(JD);
     shoppingBasket.add(chicken);
     shoppingBasket.add(irnBru);
     assert.equal(4, shoppingBasket.itemCount());
+  })  
+  it("Should remove items from basket", function(){
+    shoppingBasket.add(vegemite);
+    shoppingBasket.add(JD);
+    shoppingBasket.add(chicken);
+    shoppingBasket.add(irnBru);
+    shoppingBasket.remove(JD);
+    assert.equal(3, shoppingBasket.itemCount());
   })
-
-
-
+  it("Should calculate the total value of items in the basket", function(){
+    shoppingBasket.add(vegemite);
+    shoppingBasket.add(vegemite);
+    assert.equal(3.90, shoppingBasket.sum());
+  })
 })
